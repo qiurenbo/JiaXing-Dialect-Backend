@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "words",
+  "info": {
+    "name": "Words"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "dialects": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

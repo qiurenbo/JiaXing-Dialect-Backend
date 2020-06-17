@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "mysql",
+        "host": "localhost",
+        "port": "3306",
+        "database": "dialect",
+        "username": "root",
+        "password": "123456"
+      },
+      "options": {}
+    }
+  }
+}

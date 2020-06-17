@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sentences",
+  "info": {
+    "name": "Sentences"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "dialects": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sentences",
+      "handler": "sentences.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sentences/count",
+      "handler": "sentences.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sentences/:id",
+      "handler": "sentences.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sentences",
+      "handler": "sentences.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sentences/:id",
+      "handler": "sentences.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sentences/:id",
+      "handler": "sentences.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
