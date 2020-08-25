@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "word_tests",
+  "info": {
+    "name": "word-test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "desc": {
+      "type": "text"
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

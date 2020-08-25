@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/word-tests",
+      "handler": "word-test.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/word-tests/count",
+      "handler": "word-test.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/word-tests/:id",
+      "handler": "word-test.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/word-tests",
+      "handler": "word-test.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/word-tests/:id",
+      "handler": "word-test.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/word-tests/:id",
+      "handler": "word-test.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
