@@ -1,27 +1,27 @@
 {
   "kind": "collectionType",
-  "collectionName": "word_tests",
+  "collectionName": "researches",
   "info": {
-    "name": "word-test"
+    "name": "Researches"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "desc": {
-      "type": "text"
-    },
-    "audio": {
+    "pdf": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

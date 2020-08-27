@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `word-test` model.
+ * Lifecycle callbacks for the `researches` model.
  */
 
 module.exports = {

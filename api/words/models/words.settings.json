@@ -9,12 +9,19 @@
     "timestamps": true
   },
   "attributes": {
-    "description": {
-      "type": "string",
-      "required": true
+    "mandarin": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     },
-    "dialects": {
-      "collection": "file",
+    "dialect": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
