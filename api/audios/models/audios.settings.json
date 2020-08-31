@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audios",
+  "info": {
+    "name": "Audios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

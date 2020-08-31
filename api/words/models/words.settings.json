@@ -9,27 +9,11 @@
     "timestamps": true
   },
   "attributes": {
-    "mandarin": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "name": {
+      "type": "string"
     },
-    "dialect": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "audio": {
+      "collection": "audios"
     }
   }
 }
