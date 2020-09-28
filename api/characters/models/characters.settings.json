@@ -2,34 +2,15 @@
   "kind": "collectionType",
   "collectionName": "characters",
   "info": {
-    "name": "Characters"
+    "name": "characters"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "mandarin": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "dialect": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "audios": {
+      "collection": "audios"
     },
     "name": {
       "type": "string"

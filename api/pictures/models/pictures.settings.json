@@ -1,27 +1,15 @@
 {
   "kind": "collectionType",
-  "collectionName": "audios",
+  "collectionName": "pictures",
   "info": {
-    "name": "Audios"
+    "name": "Pictures"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "author": {
-      "type": "string"
-    },
-    "sex": {
-      "type": "string"
-    },
-    "age": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "audio": {
+    "picture": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,7 +20,7 @@
       "plugin": "upload",
       "required": false
     },
-    "name": {
+    "title": {
       "type": "string"
     }
   }
